@@ -1,0 +1,21 @@
+# Environment-specific files
+.env
+# Temporary or cache files
+*.cache
+*.tmp
+
+# IDE-specific files
+*.vscode/       # Visual Studio Code
+.idea/          # IntelliJ IDEA
+*.sublime-workspace
+
+# Generated or uploaded content
+*.bak           # Backup files
+*.swp           # Swap files (e.g., Vim)
+*.tmp           # Temp files
+# OS-specific files
+.DS_Store       # macOS
+Thumbs.db       # Windows
+
+# Logs
+*.log

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create or Update Event</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container my-5">
+        <h1 class="text-center display-5 mb-4">Create or Update Event</h1>
+        <div class="form-section shadow-sm p-4 rounded">
+            <form id="eventForm" class="row g-4">
+                <input type="hidden" id="eventId">
+                <div class="col-md-6">
+                    <label for="title" class="form-label fw-bold">Title</label>
+                    <input type="text" id="title" class="form-control" placeholder="Event Title" required>
+                </div>
+                <div class="col-md-6">
+                    <label for="category" class="form-label fw-bold">Category</label>
+                    <input type="text" id="category" class="form-control" placeholder="Event Category" required>
+                </div>
+                <div class="col-md-6">
+                    <label for="date" class="form-label fw-bold">Date</label>
+                    <input type="date" id="date" class="form-control" required>
+                </div>
+                <div class="col-md-6">
+                    <label for="time" class="form-label fw-bold">Time</label>
+                    <input type="time" id="time" class="form-control" required>
+                </div>
+                <div class="col-md-6">
+                    <label for="location" class="form-label fw-bold">Location</label>
+                    <input type="text" id="location" class="form-control" placeholder="Event Location" required>
+                </div>
+                <div class="col-md-6">
+                    <label for="ticketPrice" class="form-label fw-bold">Ticket Price</label>
+                    <input type="number" id="ticketPrice" class="form-control" placeholder="Ticket Price" required>
+                </div>
+                <div class="col-12">
+                    <label for="description" class="form-label fw-bold">Description</label>
+                    <textarea id="description" class="form-control" rows="3" placeholder="Event Description" required></textarea>
+                </div>
+                <div class="col-12 text-center">
+                    <button type="submit" class="btn btn-primary btn-lg px-4">Save Event</button>
+                </div>
+            </form>
+        </div>
+        
+    </div>
+    <a href="home.html" class="btn btn-secondary">Back to Home</a>
+    <script src="script.js"></script>
+</body>
+</html>
